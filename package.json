@@ -1,0 +1,14 @@
+{
+  "name": "swarnima-cuby-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive Birthday Experience for Swarnima Jaiswal",
+  "scripts": {
+    "start": "npm --prefix Swarnima_cuby run dev",
+    "dev": "npm --prefix Swarnima_cuby run dev",
+    "build": "npm --prefix Swarnima_cuby run build",
+    "prod": "npm --prefix Swarnima_cuby run start",
+    "lint": "npm --prefix Swarnima_cuby run lint",
+    "typecheck": "npm --prefix Swarnima_cuby run typecheck"
+  }
+}

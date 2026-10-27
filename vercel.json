@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm --prefix Swarnima_cuby run build",
+  "outputDirectory": "Swarnima_cuby/.next",
+  "installCommand": "npm --prefix Swarnima_cuby install"
+}

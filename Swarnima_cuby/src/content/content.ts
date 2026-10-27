@@ -26,8 +26,8 @@ export const content = {
   /** Background music */
   music: {
     src: "/audio/song.mp3",
-    title: "Alfaaz",
-    subtitle: "Hamza Malik & Zain Zohaib",
+    title: "Mere Bina",
+    subtitle: "Nikhil D'Souza",
     cover: "/photos/cover.webp",
   },
 

@@ -123,13 +123,13 @@ export const content = {
     ],
     typedFinal:
       "i hope ye dekh ke apke chotu se face pe ek badi si smile to aai h",
-    /** Photos displayed in the chat scene: Left is Girl, Middle is Heart, Right is Yashasvi */
+    /** Photos displayed in the chat scene: Left is Both 1, Middle is Heart, Right is Both 2 */
     backgroundPhotos: [
       {
-        src: "/photos/chat_bg/girl.jpg",
-        caption: "Swarnima ✨",
-        alt: "Swarnima",
-        role: "girl",
+        src: "/photos/chat_bg/both1.jpg",
+        caption: "Us 💖",
+        alt: "Both 1",
+        role: "both1",
       },
       {
         src: "/photos/chat_bg/heart.jpg",
@@ -138,10 +138,10 @@ export const content = {
         role: "heart",
       },
       {
-        src: "/photos/chat_bg/yashasvi.jpg",
-        caption: "Yashasvi 💫",
-        alt: "Yashasvi",
-        role: "yashasvi",
+        src: "/photos/chat_bg/both2.jpg",
+        caption: "Together 💫",
+        alt: "Both 2",
+        role: "both2",
       },
     ],
   },

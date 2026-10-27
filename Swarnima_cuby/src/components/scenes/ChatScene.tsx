@@ -73,23 +73,23 @@ export default function ChatScene({ onReplay }: ChatSceneProps) {
   }, [typewriter.isDone, showTyping]);
 
   // The 3 photos in a line:
-  // 1st: Girl (Left)
+  // 1st: Both 1 (Left)
   // 2nd: Heart (Middle)
-  // 3rd: Yashasvi (Right)
-  const photoGirl = content.chat.backgroundPhotos[0] || {
-    src: "/photos/chat_bg/girl.jpg",
-    caption: "Swarnima ✨",
-    alt: "Swarnima",
+  // 3rd: Both 2 (Right)
+  const photoBoth1 = content.chat.backgroundPhotos[0] || {
+    src: "/photos/chat_bg/both1.jpg",
+    caption: "Us 💖",
+    alt: "Both 1",
   };
   const photoHeart = content.chat.backgroundPhotos[1] || {
     src: "/photos/chat_bg/heart.jpg",
     caption: "Heart ❤️",
     alt: "Heart",
   };
-  const photoYashasvi = content.chat.backgroundPhotos[2] || {
-    src: "/photos/chat_bg/yashasvi.jpg",
-    caption: "Yashasvi 💫",
-    alt: "Yashasvi",
+  const photoBoth2 = content.chat.backgroundPhotos[2] || {
+    src: "/photos/chat_bg/both2.jpg",
+    caption: "Together 💫",
+    alt: "Both 2",
   };
 
   return (
@@ -109,7 +109,7 @@ export default function ChatScene({ onReplay }: ChatSceneProps) {
         <div
           className="absolute left-[5%] top-[10%] w-[360px] h-[360px] rounded-full opacity-25 blur-3xl"
           style={{
-            backgroundImage: `url(${photoGirl.src})`,
+            backgroundImage: `url(${photoBoth1.src})`,
             backgroundSize: "cover",
           }}
         />
@@ -123,15 +123,15 @@ export default function ChatScene({ onReplay }: ChatSceneProps) {
         <div
           className="absolute right-[5%] top-[10%] w-[360px] h-[360px] rounded-full opacity-25 blur-3xl"
           style={{
-            backgroundImage: `url(${photoYashasvi.src})`,
+            backgroundImage: `url(${photoBoth2.src})`,
             backgroundSize: "cover",
           }}
         />
       </div>
 
-      {/* ── 3 Photos in a Line (Girl on Left, Heart in Middle, Yashasvi on Right) ── */}
+      {/* ── 3 Photos in a Line (Both 1 on Left, Heart in Middle, Both 2 on Right) ── */}
       <div className="z-10 flex flex-row items-center justify-center gap-3 sm:gap-6 md:gap-10 lg:gap-12 mb-3 sm:mb-4 select-none">
-        {/* 1. LEFT: Girl's photo (Swarnima) */}
+        {/* 1. LEFT: Both 1 Photo */}
         <motion.div
           initial={{ opacity: 0, y: -25, rotate: -4 }}
           animate={{
@@ -163,14 +163,14 @@ export default function ChatScene({ onReplay }: ChatSceneProps) {
             <div className="overflow-hidden rounded-xl aspect-square bg-pink-100 shadow-inner">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={photoGirl.src}
-                alt={photoGirl.alt}
+                src={photoBoth1.src}
+                alt={photoBoth1.alt}
                 className="w-full h-full object-cover"
               />
             </div>
             {/* Caption */}
             <p className="text-center font-hand text-xs sm:text-sm md:text-base font-bold text-navy-800 mt-1.5 truncate">
-              {photoGirl.caption}
+              {photoBoth1.caption}
             </p>
           </div>
         </motion.div>
@@ -219,7 +219,7 @@ export default function ChatScene({ onReplay }: ChatSceneProps) {
           </div>
         </motion.div>
 
-        {/* 3. RIGHT: Yashasvi photo */}
+        {/* 3. RIGHT: Both 2 Photo */}
         <motion.div
           initial={{ opacity: 0, y: -25, rotate: 4 }}
           animate={{
@@ -251,14 +251,14 @@ export default function ChatScene({ onReplay }: ChatSceneProps) {
             <div className="overflow-hidden rounded-xl aspect-square bg-indigo-50 shadow-inner">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={photoYashasvi.src}
-                alt={photoYashasvi.alt}
+                src={photoBoth2.src}
+                alt={photoBoth2.alt}
                 className="w-full h-full object-cover"
               />
             </div>
             {/* Caption */}
             <p className="text-center font-hand text-xs sm:text-sm md:text-base font-bold text-navy-800 mt-1.5 truncate">
-              {photoYashasvi.caption}
+              {photoBoth2.caption}
             </p>
           </div>
         </motion.div>

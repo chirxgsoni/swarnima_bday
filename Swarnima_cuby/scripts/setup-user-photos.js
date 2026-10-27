@@ -15,13 +15,15 @@ if (!fs.existsSync(scrapbookDir)) {
 
 // 1. Setup chat_bg
 // User requirement:
-// Left: the girl's pic
+// Left: both 1 (both 1 .jpeg)
 // Middle: heart named (heart.jpeg)
-// Right: yashasvi named (yashasvi.jpeg)
-fs.copyFileSync(path.join(srcDir, 'WhatsApp Image 2026-10-27 at 4.40.29 PM11111.jpeg'), path.join(chatBgDir, 'girl.jpg'));
+// Right: both 2 (both 2 .jpeg)
+fs.copyFileSync(path.join(srcDir, 'both 1 .jpeg'), path.join(chatBgDir, 'both1.jpg'));
 fs.copyFileSync(path.join(srcDir, 'heart.jpeg'), path.join(chatBgDir, 'heart.jpg'));
+fs.copyFileSync(path.join(srcDir, 'both 2 .jpeg'), path.join(chatBgDir, 'both2.jpg'));
+fs.copyFileSync(path.join(srcDir, 'WhatsApp Image 2026-10-27 at 4.40.29 PM11111.jpeg'), path.join(chatBgDir, 'girl.jpg'));
 fs.copyFileSync(path.join(srcDir, 'yashasvi.jpeg'), path.join(chatBgDir, 'yashasvi.jpg'));
-console.log('Copied chat_bg photos: girl.jpg, heart.jpg, yashasvi.jpg');
+console.log('Copied chat_bg photos: both1.jpg, heart.jpg, both2.jpg');
 
 // 2. Setup scrapbook photos
 // User requirement:

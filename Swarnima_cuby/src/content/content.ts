@@ -26,8 +26,8 @@ export const content = {
   /** Background music */
   music: {
     src: "/audio/song.mp3",
-    title: "Mere Bina",
-    subtitle: "Nikhil D'Souza",
+    title: "I Think They Call This Love",
+    subtitle: "Matthew Ifield",
     cover: "/photos/cover.webp",
   },
 
